@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/custom-form.css" />
+
+    <title>Medip - Medical Healthcare HTML Template</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      data-bs-whatever="@fat"
+    >
+      Open modal for @fat
+    </button>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="custom-form">
+              <div class="row my-4 px-3">
+                <label for="recipient-name" class="col-form-label col-2"
+                  >Name:</label
+                >
+                <div class="col-10">
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+              </div>
+              <hr />
+              <div class="row my-4 px-3">
+                <label for="message-text" class="col-form-label col-2"
+                  >Description:</label
+                >
+                <div class="col-10">
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </div>
+
+              <div class="row my-4 px-3">
+                <label for="message-text" class="col-form-label col-2"
+                  >Category</label
+                >
+                <div class="col-10">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <hr />
+              <div class="row my-4 px-3">
+                <label for="message-text" class="col-form-label col-2"
+                  >Cover</label
+                >
+                <div class="col-10">
+                  <input type="file" class="d-none" id="cover">
+                  <label type="button" class="btn btn-light" for="cover">Change</label>
+                </div>
+              </div>
+              <hr />
+              <div class="row my-4 px-3">
+                <label for="message-text" class="col-form-label col-2"
+                  >Visibility</label>
+                <div class="col-10 d-flex align-items-center">
+                  <input class="form-check-input --lg mt-0 me-2" type="checkbox" value="" aria-label="Checkbox for following text input">
+                  <span>
+                    Keep this board secret<br>
+                    <strong>Learn more</strong>
+                  </span>
+                </div>
+              </div>
+              <hr />
+              <div class="row my-4 px-3">
+                <label for="message-text" class="col-form-label col-2"
+                  >Personalization</label>
+                <div class="col-10 d-flex align-items-center">
+                  <input class="form-check-input --lg mt-0 me-2" type="checkbox" value="" aria-label="Checkbox for following text input">
+                  Show Pins inspired by this board in your home feed
+                </div>
+              </div>
+              <hr />
+              <div class="row my-4 px-3">
+                <label for="message-text" class="col-form-label col-2"
+                  >Collaborators<br>Learn more</label>
+                <div class="col-10 ">
+                  <div class="d-flex align-items-center">
+                    <input type="text" class="form-control" placeholder="Enter name or email">
+                    <button class="btn btn-light ms-3">Invite</button>
+                  </div>
+                    
+                    <div class="collaborator">
+                    <img src="assets/images/main-banner/banner-one/image-1.jpg" class="collaborator__avatar" alt="image">
+                    <div class="collaborator__info">
+                      <span class="collaborator__name">Thomas Albedin</span><br/>
+                      <span class="collaborator__description">ISHRS - ABCOM</span>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="me-auto">
+              <button class="btn btn-light">Delete</button>
+              <button class="btn btn-light">Archive</button>
+              <button class="btn btn-light">Merge</button>
+            </div>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-danger">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>

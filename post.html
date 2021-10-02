@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/custom-form.css" />
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+
+
+    <title>Medip - Medical Healthcare HTML Template</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
+</head>
+<body>
+  <div class="post">
+    <div class="post-header">
+      <div class="post__header-left">
+        <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80" alt="" class="post__avatar">
+        <div class="post__info">
+          <span class="post__username">
+            Nguyen Jobs
+          </span>
+          <div class="post__share">
+            <i class="ri-earth-line"></i> Chia se voi:
+            <select name="" id=""><option value="">Chon chu de</option></select>
+          </div>
+        </div>
+      </div>
+      <select name="" id="">
+        <option value=""></option>
+      </select>
+    </div>
+    <div class="post__content">
+      <div id="editor">
+        <p>This is some sample content.</p>
+      </div>
+    </div>
+    <div class="post__footer">
+      <button>Delete</button>
+
+      <select name="" id="">
+        <option value="">Public</option>
+      </select>
+
+      <button>save</button>
+      <button>Publish</button>
+    </div>
+  </div>
+
+  <script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+</body>
+</html> 
