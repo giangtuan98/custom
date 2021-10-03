@@ -1,0 +1,215 @@
+@charset "UTF-8";
+.custom-form .form-check-input.--lg {
+  width: 22px;
+  height: 22px;
+}
+.custom-form .form-check-input:checked {
+  background-color: #000;
+  border-color: #000;
+}
+.custom-form .collaborator {
+  margin-top: 20px;
+  display: flex;
+}
+.custom-form .collaborator__avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.custom-form .collaborator__info {
+  margin-left: 15px;
+}
+.custom-form .collaborator__name {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.custom-form .collaborator__description {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.post {
+  background: #fff;
+}
+.post-thumbnail {
+  padding: 50px 0 40px;
+  border-bottom: 2px solid #adb5c8;
+  background-color: #eaebef;
+  text-align: center;
+  transition: all 0.3s ease;
+  outline: 2px dashed transparent;
+}
+.post-thumbnail input {
+  display: none;
+}
+.post-thumbnail.--on-dragover {
+  outline-color: #009afe;
+  outline-offset: -20px;
+  background-color: rgba(0, 154, 254, 0.1);
+}
+.post-thumbnail__btn {
+  background: #009afe;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.post-header {
+  padding: 15px 70px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d7c8db;
+}
+.post-header__left {
+  display: flex;
+  align-items: center;
+}
+.post__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.post__info {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.post__username {
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.post__share {
+  color: #909696;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.post__share i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.post__select-status {
+  border: none;
+  outline: none;
+  color: #909696;
+  font-weight: 600;
+}
+.post__content {
+  margin-top: 40px;
+  padding: 0 70px;
+}
+.post__content .ck-editor__editable_inline {
+  min-height: 400px;
+}
+.post__title {
+  color: #909696;
+  font-size: 25px;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.post__title::placeholder {
+  color: #cecece;
+}
+.post-footer {
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-top: 1px solid #e9eaec;
+  border-bottom: 1px solid #e9eaec;
+}
+.post-footer__btn, .post-footer__select-status {
+  border: 1px solid #e9eaec;
+  color: #363837;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 3px 10px;
+  font-size: 13px;
+  background: #f6f7f9;
+}
+.post-footer__btn.--publish {
+  background: #4365af;
+  color: #fff;
+}
+.post-footer__select-status {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI", "remixicon";
+  outline: none;
+}
+
+.suggestion-select {
+  min-width: 300px;
+  position: relative;
+  z-index: 999;
+}
+.suggestion-select__box {
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  height: 36px;
+  padding: 6px 21px 6px 10px;
+  font-size: 14px;
+  color: #bcbcbc;
+  position: relative;
+  cursor: pointer;
+}
+.suggestion-select__box::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+}
+.suggestion-select__main {
+  margin-top: 5px;
+  width: calc(100% - 2px);
+  max-height: 370px;
+  box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background: #fff;
+}
+.suggestion-select__main.--active {
+  display: flex;
+}
+.suggestion-select__search {
+  height: 40px;
+  border: 2px solid #d9dbd8;
+  outline: none;
+  border-radius: 20px;
+  margin: 5px 3px;
+  padding: 10px;
+  font-size: 16px;
+  color: #6e6e6e;
+  font-weight: 500;
+}
+.suggestion-select__list {
+  overflow-y: scroll;
+  flex-grow: 1;
+  height: 320px;
+}
+.suggestion-select__item {
+  color: #213848;
+  font-weight: 600;
+  padding: 17px 25px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.suggestion-select__item:hover, .suggestion-select__item.--selected {
+  background: #eeeded;
+}
+.suggestion-select__logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=custom.css.map */

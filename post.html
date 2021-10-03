@@ -1,61 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/custom-form.css" />
-    <link rel="stylesheet" href="assets/css/remixicon.css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/remixicon.css" />
 
     <title>Medip - Medical Healthcare HTML Template</title>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
-</head>
-<body>
-  <div class="post">
-    <div class="post-header">
-      <div class="post__header-left">
-        <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80" alt="" class="post__avatar">
-        <div class="post__info">
-          <span class="post__username">
-            Nguyen Jobs
-          </span>
-          <div class="post__share">
-            <i class="ri-earth-line"></i> Chia se voi:
-            <select name="" id=""><option value="">Chon chu de</option></select>
+    <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
+  </head>
+  <body>
+    <div class="post">
+      <div class="post-thumbnail">
+        <img src="assets/icons/upload-icon.png" alt="" />
+        <input
+          type="file"
+          id="select-thumbnail"
+          class="post-thumbnail__input"
+        />
+        <p class="post-thumbnail__description">Drop image to upload or</p>
+        <label class="post-thumbnail__btn" for="select-thumbnail"
+          >Choose files...</label
+        >
+      </div>
+      <div class="post-header">
+        <div class="post-header__left">
+          <img
+            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80"
+            alt=""
+            class="post__avatar"
+          />
+          <div class="post__info">
+            <span class="post__username"> Nguyen Jobs </span>
+            <div class="post__share">
+              <i class="ri-earth-line"></i> Chia sẻ với:
+              <select name="" id="" class="post__select-status">
+                <option value="">Công khai</option>
+                <option value="">Chỉ mình tôi</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="suggestion-select">
+          <div class="suggestion-select__box">Chọn chủ đề</div>
+          <div class="suggestion-select__main">
+            <input
+              text="text"
+              class="suggestion-select__search"
+              placeholder="Tìm kiếm"
+            />
+            <div class="suggestion-select__list">
+              <div class="suggestion-select__item">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80"
+                  alt=""
+                  class="suggestion-select__logo"
+                />
+                Hello Fatuco
+              </div>
+              <div class="suggestion-select__item">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80"
+                  alt=""
+                  class="suggestion-select__logo"
+                />
+                Fatuco
+              </div>
+              <div class="suggestion-select__item">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80"
+                  alt=""
+                  class="suggestion-select__logo"
+                />
+                Fatuco
+              </div>
+              <div class="suggestion-select__item">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80"
+                  alt=""
+                  class="suggestion-select__logo"
+                />
+                Fatuco
+              </div>
+              <div class="suggestion-select__item">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80"
+                  alt=""
+                  class="suggestion-select__logo"
+                />
+                Fatuco
+              </div>
+              <div class="suggestion-select__item">
+                <img
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80"
+                  alt=""
+                  class="suggestion-select__logo"
+                />
+                Fatuco
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <select name="" id="">
-        <option value=""></option>
-      </select>
-    </div>
-    <div class="post__content">
-      <div id="editor">
-        <p>This is some sample content.</p>
+      <div class="post__content">
+        <input type="text" class="post__title" placeholder="Nhập tiêu đề ..." />
+        <div id="editor">
+          <p>This is some sample content.</p>
+        </div>
+      </div>
+      <div class="post-footer">
+        <button class="post-footer__btn">Delete</button>
+
+        <div>
+          <select name="" id="" class="post-footer__select-status">
+            <option value="">&#xec79; Public</option>
+            <option value="">&#xec7a; Private</option>
+          </select>
+
+          <button class="post-footer__btn ms-2 me-1">Save</button>
+          <button class="post-footer__btn --publish">Publish</button>
+        </div>
       </div>
     </div>
-    <div class="post__footer">
-      <button>Delete</button>
 
-      <select name="" id="">
-        <option value="">Public</option>
-      </select>
+    <script>
+      ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
+        console.error(error);
+      });
 
-      <button>save</button>
-      <button>Publish</button>
-    </div>
-  </div>
+      const suggestionSelectBox = document.querySelector(
+        ".suggestion-select__box"
+      );
+      const suggestionSelectMain = document.querySelector(
+        ".suggestion-select__main"
+      );
+      const suggestionSelectSearch = document.querySelector(
+        ".suggestion-select__search"
+      );
+      const suggestionSelectList = document.querySelector(
+        ".suggestion-select__list"
+      );
 
-  <script>
-    ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
-</script>
-</body>
-</html> 
+      suggestionSelectBox.addEventListener("click", function () {
+        suggestionSelectMain.classList.toggle("--active");
+      });
+
+      document.addEventListener("click", function (e) {
+        if (
+          !suggestionSelectMain.contains(e.target) &&
+          e.target != suggestionSelectBox
+        ) {
+          suggestionSelectMain.classList.remove("--active");
+        }
+      });
+
+      suggestionSelectSearch.addEventListener("keyup", function (e) {
+        // suggestionSelectList.textContent = "";
+      });
+
+      document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("suggestion-select__item")) {
+          suggestionSelectMain.classList.remove("--active");
+          suggestionSelectBox.textContent = e.target.textContent;
+          document
+            .querySelectorAll(".suggestion-select__item")
+            .forEach((item) => item.classList.remove("--selected"));
+          e.target.classList.add("--selected");
+        }
+      });
+
+      const postThumbnail = $(".post-thumbnail");
+      postThumbnail
+        .on(
+          "drag dragstart dragend dragover dragenter dragleave drop",
+          function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        )
+        .on("dragover dragenter", function () {
+          postThumbnail.addClass("--on-dragover");
+        })
+        .on("dragleave dragend drop", function () {
+          postThumbnail.removeClass("--on-dragover");
+        })
+        .on("drop", function (e) {
+          if (files[0]) {
+            const files = e.originalEvent.dataTransfer.files;
+            postThumbnail.find('input[type="file"]').prop("files", files);
+            $(".post-thumbnail__description").text(files[0].name);
+          }
+        });
+
+      $("#select-thumbnail").change(function (e) {
+        if (e.target.files[0]) {
+          $(".post-thumbnail__description").text(e.target.files[0].name);
+        }
+        console.log($(this).val());
+      });
+    </script>
+  </body>
+</html>

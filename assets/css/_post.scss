@@ -1,0 +1,134 @@
+.post {
+  background: #fff;
+
+  &-thumbnail {
+    padding: 50px 0 40px;
+    border-bottom: 2px solid #adb5c8;
+    background-color: #eaebef;
+    text-align: center;
+    transition: all 0.3s ease;
+    outline: 2px dashed transparent;
+
+    input {
+      display: none;
+    }
+
+    &.--on-dragover {
+      outline-color: #009afe;
+      outline-offset: -20px;
+      background-color: rgba(0, 154, 254, 0.1);
+    }
+  }
+
+  &-thumbnail__btn {
+    background: #009afe;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &-header {
+    padding: 15px 70px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d7c8db;
+  }
+
+  &-header__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  &__username {
+    font-size: .9375rem;
+    font-weight: 600;
+  }
+
+  &__share {
+    color: #909696;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 18px;
+      margin-right: 5px;
+    }
+  }
+
+  &__select-status {
+    border: none;
+    outline: none;
+    color: #909696;
+    font-weight: 600;
+  }
+
+  &__content {
+    margin-top: 40px;
+    padding: 0 70px;
+
+    .ck-editor__editable_inline {
+      min-height: 400px;
+    }
+  }
+
+  &__title {
+    color: #909696;
+    font-size: 25px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    width: 100%;
+    
+    &::placeholder {
+      color: #cecece;
+    }
+  }
+
+  &-footer {
+    padding: 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-top: 1px solid #e9eaec;
+    border-bottom: 1px solid #e9eaec;
+  }
+
+  &-footer__btn, &-footer__select-status {
+    border: 1px solid #e9eaec;
+    color: #363837;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 3px 10px;
+    font-size: 13px;
+    background: #f6f7f9;
+
+  }
+  &-footer__btn.--publish {
+    background: #4365af;
+    color: #fff;
+  }
+
+  &-footer__select-status {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI", "remixicon";
+    outline: none;
+  }
+}
